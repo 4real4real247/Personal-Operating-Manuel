@@ -17,9 +17,8 @@ if (todayAt12.getTime() === birthdate.getTime()) {
 }
 
 const setDisplay = (sec) => {
-  console.log(day);
   days.innerText = String(Math.floor(sec / (24 * 60 * 60))).padStart(2, "0");
-  console.log(Math.floor(sec / (24 * 60 * 60)));
+
   sec = sec % (24 * 60 * 60);
   hours.innerText = String(Math.floor(sec / (60 * 60))).padStart(2, "0");
   sec = sec % (60 * 60);
@@ -37,6 +36,8 @@ const timer = setInterval(() => {
   totalSeconds -= 1;
   setDisplay(totalSeconds);
 }, 1000);
+
+// this is my audio player
 
 const audio = document.getElementById("myAudio");
 const playButton = document.getElementById("playButton");
