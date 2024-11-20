@@ -312,14 +312,13 @@ body {
   }
 }
 /* moving font with @keyframe*/
-body {
+
+.movingwords {
   overflow-x: hidden;
   font-family: Mountains of Christmas;
   color: #fff;
   background: #000;
   margin: 20px 0px;
-}
-.movingwords {
   width: 100%;
   text-align: center;
   animation: gradient 3.5s infinite ease-in-out;
